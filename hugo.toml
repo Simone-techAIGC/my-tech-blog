@@ -1,0 +1,54 @@
+
+baseURL = 'https://example.org/'
+languageCode = 'zh-cn'  # 设置为中文
+title = '我的技术空间'    # 你的博客标题
+theme = 'PaperMod'
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+
+[params]
+    env = "production"
+    title = "我的技术空间"
+    description = "专注于 AI、编程与架构分享"
+    author = "Simone"
+    
+    # 科技博客核心功能
+    defaultTheme = "auto"      # 自动根据系统切换深/浅色模式
+    ShowCodeCopyButtons = true # 代码块右上方显示“复制”按钮
+    showFullTextContent = false # 列表页只显示摘要
+    
+    # 主页欢迎卡片
+    [params.homeInfoParams]
+        Title = "Hello World! 👋"
+        Content = "欢迎来到我的个人博客。专注实测优质AI工具、整理全网实用网站与免费学习资源。\n热衷Vibe Coding实践，坚持以AI赋能创作与开发。\n秉持开源共享理念，无偿分享整理干货与实战心得。\n记录个人项目成长轨迹与学习复盘"
+
+    # 社交链接（会显示在主页）
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/Simone-techAIGC"
+
+# 导航栏菜单
+[[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts"
+    weight = 10
+[[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags"
+    weight = 20
+[[menu.main]]
+    identifier = "search"
+    name = "🔍 搜索"
+    url = "/search"
+    weight = 5
+
+
+
+
+
+
+# 2. 开启搜索功能
+    ShowSearchResultCount = true

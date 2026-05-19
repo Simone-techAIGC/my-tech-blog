@@ -1,5 +1,5 @@
 
-baseURL = 'https://example.org/'
+baseURL = 'https://simone.ccwu.cc/'
 languageCode = 'zh-cn'  # 设置为中文
 title = '我的技术空间'    # 你的博客标题
 theme = 'PaperMod'

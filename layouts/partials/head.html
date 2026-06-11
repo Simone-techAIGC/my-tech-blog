@@ -1,1 +1,8 @@
-
+<!-- 赛博监控追踪脚本 -->
+<script>
+  (function(){
+    var site = 'blog';
+    var img = new Image();
+    img.src = 'https://analytics-tracker.daifayo7.workers.dev/collect?site=' + site + '&p=' + encodeURIComponent(location.pathname);
+  })();
+</script>
